@@ -15,14 +15,15 @@ type Bio map[string]string
 
 class Bio extends SoftwareDeveloper {
   name     = 'Dvir Yotvat';
-  title    = 'Software Engineer student';
-  company  = 'azrieli college of engineering jerusalem';
+  title    = 'Automation Engineer';
+  company  = 'Exlibris';
   location = 'jerusalem, IL';
 }
 
 class Skills extends SoftwareDeveloper {
   languages  = ['Java', 'C', 'C++', 'Pyton (little)' , 'HTML', 'JavaScript', 'CSS'];
-  databases  = ['MySQL'];
+  databases  = ['MySQL', mongoDB];
+  others = ['AWS', 'fireBase']
 }
 
 func main() {
@@ -33,10 +34,9 @@ func main() {
 
 func GetBio() Bio {
 	return Bio{
-		"- ⚡ Quick bio:":                    "PC labs Manager and Software engineer student azrieli college of engineering jerusalem."
+		"- ⚡ Quick bio:":                    "Qualit Assurance Engineer at Exlibris."
 		"- 🔭 I’m currently working on":      "Several apps",
-		"- 🌱 I’m currently learning":        "Pyton --- Sharpening my Front End Skills (Personal goal)",
-		"- 🤔 I’m looking for help with":     "Anything I am currently learning 😅",
+		"- 🌱 I’m currently learning":        "AI",
 		"- 💬 Ask me about":                  "Java, C, C++, HTML, JavaScript, CSS"
 	}
 }
